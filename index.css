@@ -1,0 +1,10 @@
+body>.wrap {
+	width: 100%;
+}
+
+#bg {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background: url('image/bg.png') center/cover no-repeat;
+}
