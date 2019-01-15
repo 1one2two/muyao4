@@ -1,50 +1,114 @@
-body>.wrap {
-	width: 100%;
-	height: 100vh;
-	position: relative;
-	overflow:  hidden;
-}
-
-.expand {
-	flex: 1 0 0;
-}
-
-#bg {
-	position: fixed;
+body {
 	width: 100vw;
 	height: 100vh;
 	background: url('image/bg.jpg') center/cover no-repeat;
-	z-index: -1;
 }
 
-#bg>.filter {
+body>.wrap {
+	width: 100vw;
+	height: 100vh;
+	overflow:  hidden;
+	background: radial-gradient(closest-side,#FFFE,#FFFC 50%,transparent);
+}
+
+#menu {
+	width: 400px;
+	height: 100%;
+	position: relative;
+}
+
+#menu>.wrap {
+	position: absolute;
+	left: -50px;
+	top: -50px;
+	width: calc(400px + 50px);
+	height: calc(100% + 100px);
+	padding: 80px;
+	background: #0008;
+	border-top-right-radius: 100px 50%;
+	border-bottom-right-radius: 100px 50%;
+	box-shadow: #000D 3px 3px 8px;
+}
+
+#menu #logo {
 	width: 100%;
-	height: 100%;
-	background: radial-gradient(
-		closest-side,#FFFFFFEE,#FFFFFFCC 50%,transparent);
 }
 
-#topbar {
-	height: 150px;
+#menu #logo>img {
+	width: 100%;
 }
 
-#logo {
-	margin: 1vw;
+#menu #typelist {
+	font-size: 1em;
+	line-height: 2em;
 }
 
-#logo>img {
-	height: 100%;
+#menu #author {
+	text-align: center;
+	font-family: monospace;
+	color: #CCC;
+	font-size: .5em;
+	line-height: 1.5em;
 }
 
 #content {
-	overflow-y: scroll;
-	text-align: center;
+	position: relative;
 }
 
-#content .preview {
-	width: 480px;
-	height: 270px;
-	display: inline-block;
-	margin: 2vw 1vw;
-	border-radius: 8px;
+#content>.wrap {
+	overflow-y: auto;
+	padding: 2vw;
+}
+
+#content #context {
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#content #context .preview {
+	width: 320px;
+	height: 180px;
+	margin: 20px 10px;
+	border-radius: 4px;
+	box-shadow: #000A 2px 2px 4px;
+}
+
+#content #context .preview:hover {
+	cursor: pointer;
+
+}
+
+#content #video {
+	position: absolute;
+	width: 96%;
+	height: 96%;
+	top: 2%;
+	left: 2%;
+	border-radius: 16px;
+	overflow: hidden;
+	box-shadow: #000A 4px 4px 8px;
+}
+
+#content #video .close {
+	font-family: monospace;
+	display: none;
+	position: absolute;
+	text-align: center;
+	line-height: 50px;
+	width: 50px;
+	height: 50px;
+	top: 70px;
+	right: 15px;
+	border-radius: 50%;
+	background: #0008;
+	color: #FFF;
+}
+
+#content #video:hover .close {
+	display: block;
+	cursor: pointer;
+}
+
+#content #video .close:hover {
+	display: block;
 }
