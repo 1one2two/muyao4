@@ -1,0 +1,54 @@
+@media screen and (max-width: 1366px) and (min-width: 480px) {
+	#menu {
+		position: absolute;
+		left: -380px;
+	}
+
+	#menu:hover {
+		left: 0px;
+	}
+
+	#content {
+		padding-left: 20px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#menu {
+		position: absolute;
+		width: calc(100vw + 5vh);
+		left: calc(-100vw - 5vh - 10px);
+		transition: none;
+	}
+
+	#menu>.wrap {
+		width: 100%;
+		border-top-right-radius: 5vh 50%;
+		border-bottom-right-radius: 5vh 50%;
+		transition: none;
+	}
+
+	#show-menu {
+		display: block;
+	}
+
+	#content #context .preview>.iframeTrigger {
+		display: none;
+	}
+
+	#content #context .preview>a.link {
+		display: block;
+	}
+
+	*::-webkit-scrollbar {
+		width: initial;
+		position: initial;
+	}
+
+	*::-webkit-scrollbar-thumb {
+		background-color: initial;
+		border-radius: initial;
+		border: initial;
+	}
+
+}
