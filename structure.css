@@ -1,5 +1,3 @@
-@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
-
 body * {
 	box-sizing: border-box;
 }
@@ -19,22 +17,7 @@ br.hide{
 
 body {
 	margin: 0;
-	font-size: 16pt;
-	color: #FFFFFF;
-	background-color: #000000;
-	font-family: sans-serif;
 /*	user-select: none;*/
-}
-
-*::-webkit-scrollbar {
-	width: 16px;
-	position: absolute;
-}
-
-*::-webkit-scrollbar-thumb {
-	background-color: #FFFC;
-	border-radius: 6px;
-	border: transparent #000 4px;
 }
 
 .expand {
@@ -60,14 +43,6 @@ body {
 	-webkit-flex-direction: row;
 	    -ms-flex-direction: row;
 	        flex-direction: row;
-}
-
-.fullscreen {
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100vh;
-	width: 100vw;
 }
 
 .center {
