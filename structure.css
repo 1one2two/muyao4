@@ -34,7 +34,7 @@ body {
 *::-webkit-scrollbar-thumb {
 	background-color: #FFFC;
 	border-radius: 6px;
-	border: solid #000 1px;
+	border: transparent #000 4px;
 }
 
 .expand {
