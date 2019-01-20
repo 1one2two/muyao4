@@ -3,12 +3,16 @@
 body {
 	color: #000000;
 	font-family: 'Noto Sans TC';
-	font-size: 16pt;
+	font-size: 15pt;
 	overflow-x: hidden;
 }
 
 *::-webkit-scrollbar {
 	display: none;
+}
+
+* {
+	scroll-behavior: smooth;
 }
 
 #head {
@@ -31,7 +35,7 @@ body {
 
 #navbar-frame {
 	margin: 1em 0;
-	height: 6.5em;
+	height: 5.5em;
 }
 
 #navbar {
