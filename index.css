@@ -4,6 +4,11 @@ body {
 	color: #000000;
 	font-family: 'Noto Sans TC';
 	font-size: 16pt;
+	overflow-x: hidden;
+}
+
+*::-webkit-scrollbar {
+	display: none;
 }
 
 #head {
@@ -24,20 +29,26 @@ body {
 	height: 25vh;
 }
 
-#navbar {
+#navbar-frame {
 	margin: 1em 0;
+	height: 6.5em;
+}
+
+#navbar {
+	width: 100%;
 	font-size: 1em;
 	letter-spacing: .4em;
 	white-space: nowrap;
 	line-height: 1.5em;
 	font-weight: 100;
+	transition: 300ms;
 }
 
 .nav-button {
 	width: 4.5em;
 	height: 4.5em;
 	padding: .5em .5em .5em calc(.5em + .4em);
-	margin: 1em;
+	margin: .5em 1em;
 	border-radius: 50%;
 	border: solid #CCC 1px;
 	color: #CCC;
@@ -56,7 +67,6 @@ body {
 	text-align: center;
 	font-size: 2em;
 	letter-spacing: .5em;
-	text-indent: .5em;
 	font-weight: 300;
 	margin: 1em 0;
 }
